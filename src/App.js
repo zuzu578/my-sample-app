@@ -55,7 +55,7 @@ const SelectBox = () => {
       <Table striped bordered hover>
           <h1 className="songTitle">{Selected}</h1>
         <tbody>
-          {songs.map(function (item,index) {
+          {songs.map((item,index)=>{
             return (
               <tr key={index}>
                 <td>
@@ -78,7 +78,7 @@ const SelectBox = () => {
   return(
     <div className="App">
 
-      <h1> 태고의달인 크롤링</h1>
+      <h1> 수록곡 크롤링</h1>
   <div className="formArea">
   <InputGroup className="mb-3">
     <FormControl
